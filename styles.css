@@ -1,0 +1,136 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(45deg, #190361, #bb00ff);
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+
+  display: grid;
+  place-items: center;
+  height: 100vh;
+
+  font-family: 'DM-sans', sans-serif;
+}
+
+main {
+  background: #fff;
+
+  width: min(42.8rem, 90%);
+  margin: 0 auto;
+  padding: 4.8rem 6.4rem 6.4rem;
+
+  margin-top: -12rem;
+  text-align: center;
+}
+
+h1,
+p {
+  color: #34355b;
+}
+
+.hide {
+  display: none;
+}
+
+/* screen */
+
+h1,
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  margin-bottom: 1.4rem;
+}
+
+p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.5rem;
+}
+
+.screen1 button {
+  background: none;
+  border: none;
+
+  margin-top: 2rem;
+
+  cursor: pointer;
+}
+
+.screen1 button:hover {
+  animation: shaking 0.2s ease infinite;
+}
+
+@keyframes shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* screen2 */
+
+.card {
+  background: #e4edf1;
+  box-shadow: 0.2rem 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.5);
+  min-height: 10.7rem;
+
+  padding: 1rem;
+  margin-bottom: 1.7rem;
+}
+
+.card p {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.4rem;
+}
+
+.screen2 button {
+  border: none;
+  margin-top: 1.7rem;
+
+  height: 5.2rem;
+  padding: 1.6rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.5rem;
+
+  background: #ff9500;
+  color: #fff;
+  border-radius: 0.4rem;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s ease-in;
+}
+
+.screen2 button:hover {
+  background: #d47c00;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
